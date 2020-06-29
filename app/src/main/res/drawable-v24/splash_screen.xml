@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:opacity="opaque">
+    <item android:drawable="@color/colorVKBackground" />
+    <item
+        android:width="400dp"
+        android:height="400dp"
+        android:gravity="center">
+        <bitmap
+            android:gravity="fill"
+            android:mipMap="true"
+            android:src="@drawable/wolf_android_logo_vk" />
+    </item>
+</layer-list>
