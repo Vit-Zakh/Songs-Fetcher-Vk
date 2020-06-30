@@ -7,4 +7,5 @@
     <string name="quit">Quit</string>
     <string name="song_placeholder">Artist - Some song\'s name</string>
     <string name="id_placeholder">128500</string>
+    <integer name="com_vk_sdk_AppId">7525843</integer>
 </resources>

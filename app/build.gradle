@@ -49,4 +49,7 @@ dependencies {
     //Navigation Component
     implementation 'androidx.navigation:navigation-fragment:2.3.0'
     implementation 'androidx.navigation:navigation-ui:2.3.0'
+
+    //Vk SDK
+    implementation 'com.vk:androidsdk:2.2.3'
 }

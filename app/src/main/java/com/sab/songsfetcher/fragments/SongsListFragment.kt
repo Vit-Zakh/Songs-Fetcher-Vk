@@ -9,6 +9,7 @@ import com.sab.songsfetcher.R
 import com.sab.songsfetcher.adapters.SongsListAdapter
 import com.sab.songsfetcher.databinding.FragmentSongsListBinding
 import com.sab.songsfetcher.models.TestData
+import com.vk.api.sdk.VK
 
 /**
  * A simple [Fragment] subclass.
@@ -40,6 +41,7 @@ class SongsListFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        VK.logout()
         activity?.finish()
         return true
     }
