@@ -6,11 +6,14 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.NavController
 import androidx.navigation.Navigation
+import androidx.navigation.Navigation.findNavController
 import com.sab.songsfetcher.fragments.HomeFragment
 import com.vk.api.sdk.VK
 import com.vk.api.sdk.auth.VKAccessToken
 import com.vk.api.sdk.auth.VKAuthCallback
+import java.lang.ref.WeakReference
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         setTheme(R.style.AppTheme)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
     }
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         Log.d("MyTad", "onResult was called")
@@ -25,8 +29,9 @@ class MainActivity : AppCompatActivity() {
             override fun onLogin(token: VKAccessToken) {
                 Toast.makeText(this@MainActivity, "Success!", Toast.LENGTH_SHORT)
                 // User passed authorization
-
-                Log.d("MyTad", "success")
+                    //stub here
+                recreate()
+//
             }
 
             override fun onLoginFailed(errorCode: Int) {

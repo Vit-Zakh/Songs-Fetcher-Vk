@@ -3,6 +3,7 @@ package com.sab.songsfetcher.fragments
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 
 import com.sab.songsfetcher.R
@@ -47,3 +48,5 @@ class SongsListFragment : Fragment() {
     }
 
 }
+
+

@@ -58,7 +58,13 @@ class HomeFragment : Fragment() {
             Toast.makeText(context, "Logged in", Toast.LENGTH_SHORT).show()
         }
         super.onViewCreated(view, savedInstanceState)
+        fun moveToList(){
+            Navigation.findNavController(homeBinding.root).navigate(R.id.action_homeFragment_to_songsListFragment)
+
+        }
     }
 
+companion object{
 
+}
 }
